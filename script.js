@@ -14,4 +14,21 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("Message envoyé!");
         }
     });
+
+    // Ajout des animations pour les sections
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // On arrête d'observer une fois la classe ajoutée
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
 });
