@@ -35,10 +35,22 @@ nav ul li {
     margin: 0 15px;
 }
 
-nav ul li a {
+.nav-link {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 20px;
+    background: linear-gradient(180deg, #4facfe 0%, #007bff 100%);
+    border-radius: 15px;
+    border: 2px solid #007bff;
+    display: inline-block;
+    text-align: center;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+    background: linear-gradient(180deg, #007bff 0%, #4facfe 100%);
+    transform: scale(1.05);
 }
 
 main {
@@ -108,7 +120,7 @@ form input, form textarea, form button {
 }
 
 form button {
-    background-color: #333;
+    background-color: #1a1a3e; /* Marine blue background */
     color: #fff;
     border: none;
     cursor: pointer;
@@ -116,5 +128,5 @@ form button {
 }
 
 form button:hover {
-    background-color: #555;
+    background-color: #333; /* Slightly darker shade on hover */
 }
