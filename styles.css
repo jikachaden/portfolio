@@ -92,7 +92,7 @@ nav ul li a:hover {
 
 section {
     padding: 100px 20px; /* Ajouté du padding en haut */
-    text-align: center;
+    text-align: left;
     box-sizing: border-box;
 }
 
@@ -151,6 +151,7 @@ section p {
 .resume-content p {
     font-size: 1em;
     color: #eaeaea; /* Texte clair */
+    margin-left: 20px; /* Ajoute une marge à gauche pour aligner le texte */
 }
 
 #projects {
