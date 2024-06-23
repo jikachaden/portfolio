@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -92,7 +96,6 @@ nav ul li a:hover {
 
 section {
     padding: 100px 20px; /* Ajouté du padding en haut */
-    text-align: left;
     box-sizing: border-box;
 }
 
@@ -101,11 +104,17 @@ section h2 {
     font-weight: bold;
     margin: 0 0 20px;
     color: #3498db; /* Couleur d'accent stylée (bleu) */
+    text-align: center;
 }
 
 section p {
     font-size: 1.2em;
     color: #eaeaea; /* Texte clair */
+    text-align: left;
+}
+
+.intro {
+    text-align: center;
 }
 
 #resume {
@@ -127,6 +136,11 @@ section p {
     border-radius: 5px;
     width: 45%; /* Adjust width to fit two blocks per row */
     box-sizing: border-box;
+    transition: transform 0.3s ease; /* Animation smooth */
+}
+
+.resume-entry:hover {
+    transform: scale(1.05); /* Animation pop-up au survol */
 }
 
 .resume-year {
@@ -156,8 +170,91 @@ section p {
 
 #projects {
     background-color: #3d3d3d;
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    transition: transform 0.3s ease;
+    text-align: center;
+    width: 320px;
+}
+
+.project-item img {
+    width: 300px; /* Augmente la taille des images */
+    height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin: 0 auto; /* Centre l'image */
+}
+
+.project-item img:hover {
+    transform: scale(1.1); /* Animation smooth */
+}
+
+.project-item p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #3498db; /* Texte clair */
+    font-weight: bold;
+    text-decoration: underline;
+    width: 100%;
+    text-align: center;
 }
 
 #contact {
     background-color: #4e4e4e;
+    padding-bottom: 50px; /* Ajouté du padding en bas pour l'image de contact */
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.contact-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.contact-item strong {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: white; /* Couleur d'accent stylée (bleu) */
+}
+
+.contact-item p, .contact-item a {
+    margin: 0;
+    font-size: 1em;
+    color: #eaeaea; /* Texte clair */
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: white; /* Couleur d'accent stylée (bleu) */
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
 }

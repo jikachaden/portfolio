@@ -10,10 +10,10 @@
     <nav>
         <div class="logo">JAWAD</div>
         <ul>
-            <li><a href="#home">Accueil</a></li>
-            <li><a href="#resume">CV</a></li>
-            <li><a href="#projects">Projets</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" class="smooth-scroll">Accueil</a></li>
+            <li><a href="#resume" class="smooth-scroll">CV</a></li>
+            <li><a href="#projects" class="smooth-scroll">Projets</a></li>
+            <li><a href="#contact" class="smooth-scroll">Contact</a></li>
         </ul>
     </nav>
     <div class="header" id="home">
@@ -21,14 +21,14 @@
         <h1>Je suis Ikachaden Jawad</h1>
         <p>Étudiant Développeur Fullstack</p>
         <div class="buttons">
-            <a href="#contact">Découvrez Moi</a>
+            <a href="#resume" class="smooth-scroll">Découvrez Moi</a>
         </div>
     </div>
     <section id="resume">
         <h2>CV</h2>
-        <p>Passionné par les technologies de l'information et fort d'une solide formation en sciences pour l'ingénieur avec une spécialisation en informatique, je suis actuellement en quête d'une alternance en tant que développeur fullstack pour mettre en pratique mes compétences et contribuer à des projets innovants au sein d'une entreprise dynamique.</p>
+        <p class="intro">Passionné par les technologies de l'information et fort d'une solide formation en sciences pour l'ingénieur avec une spécialisation en informatique, je suis actuellement en quête d'une alternance en tant que développeur fullstack pour mettre en pratique mes compétences et contribuer à des projets innovants au sein d'une entreprise dynamique.</p>
         <div class="resume-container">
-            <div class="resume-entry">
+            <div class="resume-entry pop-up">
                 <div class="resume-year">2020-2022</div>
                 <div class="resume-content">
                     <h3>DUT en GEII</h3>
@@ -40,7 +40,7 @@
                     </p>
                 </div>
             </div>
-            <div class="resume-entry">
+            <div class="resume-entry pop-up">
                 <div class="resume-year">2022-2023</div>
                 <div class="resume-content">
                     <h3>Licence en Sciences pour l'Ingénieur</h3>
@@ -50,7 +50,7 @@
                     </p>
                 </div>
             </div>
-            <div class="resume-entry">
+            <div class="resume-entry pop-up">
                 <div class="resume-year">En cours</div>
                 <div class="resume-content">
                     <h3>Master en Développement Fullstack</h3>
@@ -58,23 +58,61 @@
                     <p>Spécialisation en développement web et logiciel. Formation complète en technologies front-end et back-end, ainsi qu'en gestion de projets informatiques.</p>
                 </div>
             </div>
-            <div class="resume-entry">
+            <div class="resume-entry pop-up">
                 <div class="resume-year">2023</div>
                 <div class="resume-content">
                     <h3>Stage en Développement Web</h3>
-                    <h4>Nom de l'Entreprise</h4>
-                    <p>Expérience pratique dans le développement de sites web et d'applications web. Travail sur des projets réels en utilisant des technologies modernes.</p>
+                    <h4>Freelaw</h4>
+                    <p>
+                        Expérience pratique dans le développement de sites web et d'applications web. Travail sur des projets réels en utilisant les technologies suivantes :<br>
+                        <strong>Technologies :</strong> PHP Storm, GitHub, Docker, WordPress, Shopify, HTML, CSS, JavaScript, React
+                    </p>
                 </div>
             </div>
         </div>
     </section>
     <section id="projects">
         <h2>Projets</h2>
-        <p>Présentez vos projets ici...</p>
+        <div class="project-container">
+            <div class="project-item">
+                <a href="https://example.com/projet1" target="_blank">
+                    <img src="icons/project1.png" alt="Projet 1">
+                </a>
+                <p class="project-title">Mini-jeu : Color Game</p>
+            </div>
+            <div class="project-item">
+                <a href="https://example.com/projet2" target="_blank">
+                    <img src="icons/project2.png" alt="Projet 2">
+                </a>
+                <p class="project-title">Codage de Huffman</p>
+            </div>
+        </div>
     </section>
     <section id="contact">
         <h2>Contact</h2>
-        <p>Fournissez vos coordonnées ici...</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <img src="icons/address.png" alt="Adresse">
+                <strong>Adresse :</strong>
+                <p>Paris, France</p>
+            </div>
+            <div class="contact-item">
+                <img src="icons/phone.png" alt="Téléphone">
+                <strong>Téléphone :</strong>
+                <p>06.51.65.90.31</p>
+            </div>
+            <div class="contact-item">
+                <img src="icons/email.png" alt="Email">
+                <strong>Email :</strong>
+                <p>ikachadenjawad@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <img src="icons/linkedin.png" alt="LinkedIn">
+                <strong>LinkedIn :</strong>
+                <p><a href="https://www.linkedin.com/in/ikachadenjawad" target="_blank">Mon Profil LinkedIn</a></p>
+            </div>
+        </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
