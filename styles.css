@@ -112,24 +112,28 @@ section p {
     background-color: #2c2c2c;
 }
 
+.resume-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .resume-entry {
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-}
-
-.resume-year {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #3498db; /* Couleur d'accent stylée (bleu) */
-    margin-right: 20px;
-}
-
-.resume-content {
+    flex-direction: column;
     background-color: #3d3d3d;
     padding: 20px;
     border-radius: 5px;
-    width: 100%;
+    width: 45%; /* Adjust width to fit two blocks per row */
+    box-sizing: border-box;
+}
+
+.resume-year {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #3498db; /* Couleur d'accent stylée (bleu) */
+    margin-bottom: 10px;
 }
 
 .resume-content h3 {
@@ -142,6 +146,11 @@ section p {
     margin: 0 0 10px;
     font-size: 1.2em;
     color: #bbbbbb; /* Texte clair */
+}
+
+.resume-content p {
+    font-size: 1em;
+    color: #eaeaea; /* Texte clair */
 }
 
 #projects {
